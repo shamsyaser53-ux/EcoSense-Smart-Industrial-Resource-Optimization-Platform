@@ -1,0 +1,1 @@
+# EcoSense-Smart-Industrial-Resource-Optimization-Platform
