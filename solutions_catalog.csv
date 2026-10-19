@@ -1,0 +1,6 @@
+solution,target_meter,saving_pct,capex_egp,source,capex_note
+Fix compressed-air leaks,compressed_air_kwh,0.15,60000,"US DOE Compressed Air Tip Sheet #3: leaks waste 20-30% of compressor output, under 10% achievable (saving ~10-20%)",Placeholder - needs Egyptian vendor quote
+Chiller cleaning + maintenance,cooling_kwh,0.07,40000,"Research on air-cooled chillers: 20% condenser fouling makes the plant ~7% less efficient (Univ. of Palermo)",Placeholder - needs Egyptian vendor quote
+VSD on chiller/compressors,cooling_kwh,0.25,350000,"Case studies report ~30-31% annual saving (Duke Realty chiller VFD retrofit; GRU air-cooled VFD study); 25% used as conservative",Placeholder - needs Egyptian vendor quote
+LED lighting + occupancy sensors,lighting_kwh,0.55,120000,"Vendor/DLC claims up to 67-75% vs HID/fluorescent; DoD ESTCP field test 93% with controls; 55% used as conservative",Placeholder - needs Egyptian vendor quote
+Auto shutdown of idle machines,machines_kwh,0.08,50000,"ENERGY STAR Energy Treasure Hunts list idle/weekend shutdown as a top measure (about 5% plant saving in example); Politecnico di Milano study: up to 10%",Placeholder - needs Egyptian vendor quote

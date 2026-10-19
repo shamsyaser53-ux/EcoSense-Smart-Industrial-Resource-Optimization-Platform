@@ -1,0 +1,164 @@
+ECOSENSE PROJECT AUDIT
+Date: 2026-10-17T01:31:41
+Project: E:\Projects_1\Ppject anther pepole
+Python: 3.11.16 (main, Aug 25 2026, 13:59:19) [MSC v.1944 64 bit (AMD64)]
+
+============================================================
+PROJECT FILES
+Status: PASS
+.env
+.env.example
+.gitignore
+.pytest_cache\.gitignore
+.pytest_cache\CACHEDIR.TAG
+.pytest_cache\README.md
+.pytest_cache\v\cache\nodeids
+AGENTS.md
+API_CONTRACT.md
+EcoSense_notebook.ipynb
+README.md
+app.py
+artifacts.joblib
+audit_project.py
+auth_models.py
+config.py
+database.py
+deps.py
+ecosense.db
+ecosense.py
+factory_data.csv
+factory_data_2026.csv
+frontend\api.js
+frontend\app.js
+frontend\index.html
+frontend\style.css
+generate_data.py
+main.py
+models.py
+ref_params.py
+requirements.txt
+routers\__init__.py
+routers\auth.py
+routers\ml.py
+routers\simulation.py
+routers\waste.py
+schemas_auth.py
+schemas_waste.py
+security.py
+seed_waste_history.py
+services\cost_service.py
+services\ml_service.py
+services\simulation_service.py
+services\waste_service.py
+solutions_catalog.csv
+test_ecosense.py
+tests\conftest.py
+tests\test_auth.py
+tests\test_cost_service.py
+tests\test_simulation_service.py
+tests\test_unified_ml.py
+tests\test_waste_route.py
+train.py
+
+
+============================================================
+PYTHON SYNTAX
+Status: PASS
+All 32 Python files compiled successfully.
+
+
+============================================================
+DEPENDENCY CHECK
+Status: PASS
+No broken requirements found.
+
+
+============================================================
+AUTOMATED TESTS
+Status: PASS
+============================= test session starts =============================
+platform win32 -- Python 3.11.16, pytest-9.1.1, pluggy-1.7.0 -- E:\Projects_1\Ppject anther pepole\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: E:\Projects_1\Ppject anther pepole
+plugins: anyio-4.15.1
+collecting ... collected 19 items
+
+tests/test_auth.py::test_register_company PASSED                         [  5%]
+tests/test_auth.py::test_duplicate_email_rejected PASSED                 [ 10%]
+tests/test_auth.py::test_login_and_get_account PASSED                    [ 15%]
+tests/test_auth.py::test_wrong_password_rejected PASSED                  [ 21%]
+tests/test_auth.py::test_invalid_token_rejected PASSED                   [ 26%]
+tests/test_cost_service.py::test_costs_use_provided_prices PASSED        [ 31%]
+tests/test_cost_service.py::test_missing_price_is_reported_not_guessed PASSED [ 36%]
+tests/test_cost_service.py::test_negative_values_rejected PASSED         [ 42%]
+tests/test_cost_service.py::test_simulation_math PASSED                  [ 47%]
+tests/test_cost_service.py::test_simulation_rejects_bad_percent PASSED   [ 52%]
+tests/test_simulation_service.py::test_calculates_savings_and_payback PASSED [ 57%]
+tests/test_simulation_service.py::test_zero_savings_has_no_payback_period PASSED [ 63%]
+tests/test_simulation_service.py::test_invalid_period_type_is_rejected PASSED [ 68%]
+tests/test_unified_ml.py::test_unified_health_and_defaults PASSED        [ 73%]
+tests/test_unified_ml.py::test_unified_what_if PASSED                    [ 78%]
+tests/test_unified_ml.py::test_reject_boolean_in_prices PASSED           [ 84%]
+tests/test_unified_ml.py::test_password_bytes_validation PASSED          [ 89%]
+tests/test_unified_ml.py::test_aggregate_analyze_requires_auth PASSED    [ 94%]
+tests/test_waste_route.py::test_waste_uses_matching_period_and_company PASSED [100%]
+
+============================== warnings summary ===============================
+.venv\Lib\site-packages\fastapi\testclient.py:1
+  E:\Projects_1\Ppject anther pepole\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+tests/test_unified_ml.py::test_reject_boolean_in_prices
+  E:\Projects_1\Ppject anther pepole\.venv\Lib\site-packages\fastapi\telemetry\_api.py:244: StarletteDeprecationWarning: 'HTTP_422_UNPROCESSABLE_ENTITY' is deprecated. Use 'HTTP_422_UNPROCESSABLE_CONTENT' instead.
+    return function(**arguments)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================= 19 passed, 2 warnings in 5.60s ========================
+
+
+============================================================
+APPLICATION IMPORT AND API ROUTES
+Status: PASS
+Application title: EcoSense API
+Application version: 1.0.0
+Routes:
+GET,HEAD /openapi.json
+GET,HEAD /docs
+GET,HEAD /docs/oauth2-redirect
+GET,HEAD /redoc
+GET /
+POST /analyze
+
+
+============================================================
+GIT STATUS
+Status: PASS
+M .gitignore
+ M app.py
+ M auth_models.py
+ D batch1.zip
+ D batch2.zip
+ D batch3.zip
+ D cost
+ M deps.py
+ D "ecosense copy.db"
+ M ecosense.db
+ D ecosense.db.backup
+ M ecosense_audit_report.txt
+ D "env (1).example"
+ M frontend/app.js
+ M frontend/index.html
+ D frontend/package-lock.json
+ D "gitignore (2)"
+ M main.py
+ D project_tree.txt
+ M requirements.txt
+ D routers/.waste.py
+ M schemas_auth.py
+ M tests/test_waste_route.py
+?? .env.example
+?? AGENTS.md
+?? frontend/api.js
+?? routers/ml.py
+?? services/ml_service.py
+?? tests/test_unified_ml.py
